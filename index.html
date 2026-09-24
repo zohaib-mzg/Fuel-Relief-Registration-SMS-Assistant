@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
-<title>Fuel Relief Registration - SMS Assistant</title>
-<meta name="description" content="Prepare your fuel relief registration SMS in seconds. Nothing leaves your browser.">
+<title>AasaanFuel - SMS Registration Assistant</title>
+<meta name="description" content="AasaanFuel: prepare your fuel relief registration SMS in seconds. Nothing leaves your browser.">
 <style>
   :root{
     --green-900:#0d3b26;
@@ -539,10 +539,23 @@
   <div class="header-inner">
     <div class="brand">
       <div class="brand-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h12"/><path d="M4 9h9v13H4z"/><path d="M13 7l4-2 3 2v9a2 2 0 0 1-2 2"/><path d="M16 12h1.5a1.5 1.5 0 0 1 1.5 1.5V15"/><path d="M4 13h9"/></svg>
+        <svg viewBox="0 0 40 40" fill="none">
+          <defs>
+            <linearGradient id="afLogoGrad" x1="6" y1="4" x2="34" y2="36" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f2fff7"/>
+              <stop offset="0.55" stop-color="#bfe8cd"/>
+              <stop offset="1" stop-color="#4a9c6c"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 3.5C26 11.2 32.5 18.7 32.5 25.2a12.5 12.5 0 1 1-25 0C7.5 18.7 14 11.2 20 3.5z" fill="url(#afLogoGrad)"/>
+          <path d="M13.5 24.8a6.5 6.5 0 0 0 6.5 6.5" stroke="#0f4d30" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          <path d="M20 13v9.8" stroke="#0f4d30" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="20" cy="25.8" r="2.1" fill="#0f4d30"/>
+          <path d="M24.5 12.5l2.2-2.2" stroke="#0f4d30" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
       </div>
       <div class="brand-text">
-        <h1 data-i18n="siteTitle">Fuel Relief Registration</h1>
+        <h1 data-i18n="siteTitle">AasaanFuel</h1>
         <p data-i18n="siteSubtitle">SMS Registration Assistant</p>
       </div>
     </div>
@@ -560,12 +573,6 @@
 </header>
 
 <main id="main">
-
-  <nav class="steps" aria-label="Progress">
-    <div class="step-pill active" id="stepPill1"><span class="num">1</span><span data-i18n="step1">Enter Details</span></div>
-    <div class="step-pill" id="stepPill2"><span class="num">2</span><span data-i18n="step2">Review SMS</span></div>
-    <div class="step-pill" id="stepPill3"><span class="num">3</span><span data-i18n="step3">Open Messages</span></div>
-  </nav>
 
   <div class="grid">
 
@@ -658,7 +665,7 @@
                 <span data-i18n="labelVehicle">Vehicle Number</span>
               </label>
               <input type="text" id="fVehicle" name="vehicle" autocomplete="off"
-                     placeholder="BNN-1234" data-i18n-ph="phVehicle"
+                     placeholder="BNF-1234" data-i18n-ph="phVehicle"
                      aria-describedby="errVehicle vehicleNote" maxlength="20">
               <p class="field-note" id="vehicleNote" data-i18n="vehicleNote">Use the exact same format as printed on your Vehicle Registration Copy (e.g. BNF-13-6456) - same letters, numbers and dashes.</p>
               <p class="err-msg" id="errVehicle" role="alert" data-i18n="errVehicle">Enter your vehicle number.</p>
@@ -795,10 +802,9 @@
   var STRINGS = {
     en: {
       skip:"Skip to main content",
-      siteTitle:"Fuel Relief Registration",
+      siteTitle:"AasaanFuel",
       siteSubtitle:"SMS Registration Assistant",
       smsBadge:"SMS: 9771",
-      step1:"Enter Details", step2:"Review SMS", step3:"Open Messages",
       guideTitle:"Quick Guide",
       guideText:"See the Vehicle Number and Registration Date from your Vehicle Registration Copy.",
       guideNote:"Everything is prepared on this device. Nothing is uploaded anywhere.",
@@ -811,9 +817,9 @@
       provBalochistan:"Balochistan", provIct:"Islamabad Capital Territory",
       provGb:"Gilgit-Baltistan", provAjk:"Azad Jammu & Kashmir",
       labelDate:"Registration Date", errDate:"Please choose a valid date.",
-      labelVehicle:"Vehicle Number", phVehicle:"BNF-13-6456",
+      labelVehicle:"Vehicle Number", phVehicle:"BNF-1234",
       errVehicle:"Enter your vehicle number.",
-      vehicleNote:"Use the exact same format as printed on your Vehicle Registration Copy (e.g. BNF-13-6456) — same letters, numbers and dashes.",
+      vehicleNote:"Use the exact same format as printed on your Vehicle Registration Copy (e.g. BNF-13-6456) - same letters, numbers and dashes.",
       formatBoxLabel:"Your SMS will be ready in this format",
       readyFlag:"Your SMS is ready to send.",
       btnGenerate:"Create & Open Messages",
@@ -835,10 +841,9 @@
     },
     ur: {
       skip:"مرکزی مواد پر جائیں",
-      siteTitle:"فیول ریلیف رجسٹریشن",
+      siteTitle:"آسان فیول",
       siteSubtitle:"ایس ایم ایس رجسٹریشن اسسٹنٹ",
       smsBadge:"ایس ایم ایس: 9771",
-      step1:"تفصیلات درج کریں", step2:"ایس ایم ایس جائزہ", step3:"میسج ایپ کھولیں",
       guideTitle:"مختصر رہنمائی",
       guideText:"گاڑی نمبر اور رجسٹریشن تاریخ اپنی گاڑی رجسٹریشن کاپی سے دیکھیں۔",
       guideNote:"سب کچھ اسی ڈیوائس پر تیار ہوتا ہے۔ کوئی معلومات کہیں اپ لوڈ نہیں ہوتیں۔",
@@ -851,7 +856,7 @@
       provBalochistan:"بلوچستان", provIct:"اسلام آباد کیپیٹل ٹیریٹری",
       provGb:"گلگت بلتستان", provAjk:"آزاد جموں و کشمیر",
       labelDate:"رجسٹریشن تاریخ", errDate:"براہ کرم درست تاریخ منتخب کریں۔",
-      labelVehicle:"گاڑی نمبر", phVehicle:"BNF-13-6456",
+      labelVehicle:"گاڑی نمبر", phVehicle:"BNF-1234",
       errVehicle:"براہ کرم اپنا گاڑی نمبر درج کریں۔",
       vehicleNote:"بالکل وہی فارمیٹ درج کریں جو آپ کی گاڑی رجسٹریشن کاپی پر لکھا ہے (مثلاً BNF-13-6456) — وہی حروف، ہندسے اور ڈیشز۔",
       formatBoxLabel:"آپ کا ایس ایم ایس اس فارمیٹ میں تیار ہوگا",
@@ -1032,6 +1037,7 @@
 
   function setStep(n){
     [stepPill1, stepPill2, stepPill3].forEach(function(p, idx){
+      if(!p) return;
       p.classList.remove("active","done");
       if(idx + 1 < n) p.classList.add("done");
       if(idx + 1 === n) p.classList.add("active");
